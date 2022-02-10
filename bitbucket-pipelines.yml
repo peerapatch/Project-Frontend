@@ -1,0 +1,16 @@
+image: node:10.15.3
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build and up sms-partner to production
+          script:
+            - ssh -tt root@128.199.105.202 << EOF
+            - cd /root/sms-partner
+            - git pull
+            - cd ../sms-nginx
+            - docker-compose up -d --build partner
+            - docker ps -a
+            - exit 0
+            - EOF

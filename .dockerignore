@@ -1,0 +1,8 @@
+.gitignore
+bitbucket-pipelines.yml
+package-lock.json
+yarn.lock
+node_modules
+.vscode
+.next
+out

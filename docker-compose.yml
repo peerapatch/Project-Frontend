@@ -1,0 +1,8 @@
+version: '3'
+services:
+  partner:
+    container_name: project2
+    restart: always
+    build: .
+    ports:
+      - '3060:3060'

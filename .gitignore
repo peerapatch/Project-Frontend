@@ -1,0 +1,8 @@
+node_modules
+.env
+.next
+ecosystem.config.js
+.vscode
+out
+yarn.lock
+package-lock.json
